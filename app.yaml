@@ -1,0 +1,8 @@
+runtime: nodejs14
+env_variables:
+  SQL_USER: root
+  SQL_PASSWORD: ''
+  SQL_DATABASE: sigap
+  INSTANCE_CONNECTION_NAME: animated-lyceum-312604:asia-southeast2:sigap-blood-donor
+beta_settings:
+  cloud_sql_instances: animated-lyceum-312604:asia-southeast2:sigap-blood-donor

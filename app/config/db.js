@@ -4,14 +4,15 @@ const sequelize = new Sequelize(
   "root", //user
   "", //password
   {
-    host: "localhost",
+    host: "/cloudsql/animated-lyceum-312604:asia-southeast2:sigap-blood-donor",
     dialect: "mysql",
     operatorAliases: "0",
     timezone: "+07:00", //indonesia GMT +7
     logging: false,
-    // dialectOptions: {
-    //   encrypt: true,
-    // },
+    dialectOptions: {
+      encrypt: true,
+      socketPath: '/cloudsql/animated-lyceum-312604:asia-southeast2:sigap-blood-donor'
+    },
   }
 );
 

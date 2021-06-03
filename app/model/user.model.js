@@ -18,16 +18,16 @@ module.exports = (sequelize, Sequelize) => {
             type: Sequelize.STRING(20)
         },
         ktp: {
-            type: Sequelize.STRING, 
-            uniqueKey:true
+            type: Sequelize.STRING,
+            uniqueKey: true
         },
-        rhesus:{
+        rhesus: {
             type: Sequelize.STRING(5)
         },
-        gender:{
+        gender: {
             type: Sequelize.STRING(10)
         },
-        latitude:{
+        latitude: {
             type: Sequelize.STRING(50)
         },
         longitude: {

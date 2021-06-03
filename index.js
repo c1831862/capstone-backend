@@ -5,13 +5,14 @@ const cors = require("cors")
 app.use(cors());
 app.use(bodyParser.json());
 require("dotenv").config();
-const db = require("./app/config/db.config");
+const db = require("./app/config/db");
+const port = process.env.PORT || 3000
 
-app.listen(3030, function(){
+app.listen(port, function () {
     console.log("connected")
 })
-db.sequelize.sync({alter:true})
-app.get("/", function (req, res){
+db.sequelize.sync({ alter: true })
+app.get("/", function (req, res) {
     res.json({
         success: true
     })
